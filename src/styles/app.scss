@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "ThicccboiRegular";
+    src: local("ThicccboiRegular"),
+        url("../fonts/TTF/THICCCBOI-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ThicccboiBold";
+    src: local("ThicccboiBold"),
+        url("../fonts/TTF/THICCCBOI-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ThicccboiSemiBold";
+    src: local("ThicccboiSemiBold"),
+        url("../fonts/TTF/THICCCBOI-SemiBold.ttf") format("truetype");
+}
+
+.App {
+    h1 {
+        font-family: 'ThicccboiBold';
+        font-size: 32px;
+    }
+
+    .semi-bold {
+        font-family: 'ThicccboiSemiBold';
+        font-size: 32px;
+    }
+
+    .normal {
+        font-family: 'ThicccboiRegular';
+        font-size: 32px;
+    }
+}
