@@ -1,0 +1,42 @@
+// logo text
+.logo-text {
+    font-family: $ff-main;
+    font-weight: 500;
+    font-size: 3.2rem;
+    color: $color-heading;
+}
+
+.heading-1 {
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 5.2rem;
+    color: $color-heading;
+}
+
+.heading-2 {
+    color: $color-heading;
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+    font-weight: 500;
+}
+
+.sub-heading {
+    color: $color-heading;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 600;
+}
+
+.link-arrow {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    color: $color-heading;
+}
+
+.link-nav {
+    font-size: 3.2rem;
+    line-height: 3.4rem;
+    color: $color-white;
+    font-weight: 500;
+}

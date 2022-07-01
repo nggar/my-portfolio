@@ -1,36 +1,35 @@
+// Fonts
 @font-face {
-    font-family: "ThicccboiRegular";
-    src: local("ThicccboiRegular"),
-        url("../fonts/TTF/THICCCBOI-Regular.ttf") format("truetype");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "ThicccboiBold";
-    src: local("ThicccboiBold"),
-        url("../fonts/TTF/THICCCBOI-Bold.ttf") format("truetype");
-    font-weight: bold;
+    font-family: "Thicccboi";
+    src: url("../fonts/TTF/THICCCBOI-Medium.ttf");
+    font-style: normal;
+    font-weight: 500
 }
 
 @font-face {
-    font-family: "ThicccboiSemiBold";
-    src: local("ThicccboiSemiBold"),
-        url("../fonts/TTF/THICCCBOI-SemiBold.ttf") format("truetype");
+    font-family: "Thicccboi";
+    src: url("../fonts/TTF/THICCCBOI-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600
 }
 
-.App {
-    h1 {
-        font-family: 'ThicccboiBold';
-        font-size: 32px;
-    }
-
-    .semi-bold {
-        font-family: 'ThicccboiSemiBold';
-        font-size: 32px;
-    }
-
-    .normal {
-        font-family: 'ThicccboiRegular';
-        font-size: 32px;
-    }
+@font-face {
+    font-family: "Thicccboi";
+    src: url("../fonts/TTF/THICCCBOI-Bold.ttf");
+    font-style: normal;
+    font-weight: 700
 }
+
+// abstract
+@import './abstract/variable';
+@import './abstract/mixins';
+// base
+@import './base/base';
+@import './base/typography';
+// utils
+@import './utils/utils';
+// home
+@import './home/home';
+// project-detail
+// resume
+// contact
