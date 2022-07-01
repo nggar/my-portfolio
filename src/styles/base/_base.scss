@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    font-family: $ff-main;
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 3rem;
@@ -23,4 +22,6 @@ a {
     display: inline-block;
 }
 
-.App {}
+.App {
+    font-family: $ff-main;
+}

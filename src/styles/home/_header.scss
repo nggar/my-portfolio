@@ -1,6 +1,10 @@
 .header {
     h1 {
         padding-bottom: 2.4rem;
+
+        @include respond(992) {
+            padding-bottom: 0rem;
+        }
     }
 
     p {
@@ -17,6 +21,7 @@
             transform: rotate(-45deg) translateX(0px) translateY(0px);
             margin-left: .3rem;
             color: $color-heading;
+            transition: all .75s ease-out;
         }
 
         &:focus {
@@ -26,45 +31,27 @@
 
             svg {
                 color: $color-regular;
-                animation: link-arrow 1s ease;
                 transform: rotate(-45deg) translateX(7px) translateY(0px);
+                transition: all .75s ease-out;
             }
 
             &::after {
-                animation: link-underline 1s ease;
                 opacity: 1;
+                width: 100%;
+                transition: all .75s ease-out;
             }
         }
 
         &::after {
             content: '';
             height: .2rem;
-            width: 100%;
+            width: 0%;
             opacity: 0;
             bottom: -60%;
             left: 0;
             background-color: $color-heading;
             position: absolute;
+            transition: all .75s ease-out;
         }
-    }
-}
-
-@keyframes link-underline {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-@keyframes link-arrow {
-    0% {
-        transform: rotate(-45deg) translateX(0) translateY(0);
-    }
-
-    100% {
-        transform: rotate(-45deg) translateX(7px) translateY(0px);
     }
 }
