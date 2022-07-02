@@ -22,6 +22,11 @@ a {
     display: inline-block;
 }
 
+li {
+    list-style: none;
+}
+
 .App {
     font-family: $ff-main;
+    min-width: 100%;
 }

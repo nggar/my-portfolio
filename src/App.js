@@ -1,14 +1,17 @@
+import { BrowserRouter } from 'react-router-dom';
 // import styles
 import './styles/app.scss';
 // import components
+import Nav from './components/Nav';
 import HomePage from './components/home/HomePage';
-
-// import pages
 
 function App() {
     return (
         <div className="App">
-            <HomePage />
+            <BrowserRouter>
+                <Nav />
+                <HomePage />
+            </BrowserRouter>
         </div>
     );
 }

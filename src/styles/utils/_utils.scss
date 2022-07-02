@@ -3,8 +3,17 @@
     margin-right: 2.4rem;
 }
 
+.section-padding {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+}
+
 .container {
     width: 100%;
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $color-line;
 }

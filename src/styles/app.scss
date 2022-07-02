@@ -1,21 +1,21 @@
 // Fonts
 @font-face {
     font-family: "Thicccboi";
-    src: url("../fonts/TTF/THICCCBOI-Medium.ttf");
+    src: url("../assets/fonts/TTF/THICCCBOI-Medium.ttf");
     font-style: normal;
     font-weight: 500
 }
 
 @font-face {
     font-family: "Thicccboi";
-    src: url("../fonts/TTF/THICCCBOI-SemiBold.ttf");
+    src: url("../assets/fonts/TTF/THICCCBOI-SemiBold.ttf");
     font-style: normal;
     font-weight: 600
 }
 
 @font-face {
     font-family: "Thicccboi";
-    src: url("../fonts/TTF/THICCCBOI-Bold.ttf");
+    src: url("../assets/fonts/TTF/THICCCBOI-Bold.ttf");
     font-style: normal;
     font-weight: 700
 }
@@ -33,3 +33,5 @@
 // project-detail
 // resume
 // contact
+
+@import './nav';

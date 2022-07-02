@@ -1,0 +1,28 @@
+.nav {
+    padding: 3.2rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        h1:hover {
+            color: $color-regular;
+        }
+    }
+
+
+    &__links {
+        a {
+            color: $color-heading;
+
+            &:hover {
+                color: $color-regular;
+            }
+
+            &:nth-child(2) {
+                margin-left: 3.2rem;
+            }
+        }
+    }
+}

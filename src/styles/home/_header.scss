@@ -1,30 +1,46 @@
 .header {
+    display: flex;
+
+    &__left {
+        width: 80%;
+    }
+
+    &__right {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
     h1 {
         padding-bottom: 2.4rem;
-
-        @include respond(992) {
-            padding-bottom: 0rem;
-        }
     }
 
     p {
-        padding-bottom: 3.2rem;
+        font-size: 2.2rem;
+        line-height: 3.6rem;
+        padding-bottom: 5.6rem;
+        width: 75%;
     }
 
     .link-arrow {
         display: flex;
-        height: 2.1rem;
-        width: 18rem;
         position: relative;
+        width: 21.7rem;
+        height: min-content;
+        align-items: center;
 
         svg {
             transform: rotate(-45deg) translateX(0px) translateY(0px);
-            margin-left: .3rem;
             color: $color-heading;
-            transition: all .75s ease-out;
+            height: 2.4rem;
+            position: absolute;
+            transition: all .25s ease-out;
+            bottom: 0;
+            right: 0;
         }
 
-        &:focus {
+        &:hover {
             .link-arrow__text {
                 color: $color-regular;
             }
@@ -32,26 +48,75 @@
             svg {
                 color: $color-regular;
                 transform: rotate(-45deg) translateX(7px) translateY(0px);
-                transition: all .75s ease-out;
+                transition: all .25s ease-out;
             }
 
             &::after {
                 opacity: 1;
                 width: 100%;
-                transition: all .75s ease-out;
+                transition: all .25s ease-out;
             }
         }
 
         &::after {
             content: '';
-            height: .2rem;
+            height: .24rem;
             width: 0%;
             opacity: 0;
             bottom: -60%;
             left: 0;
             background-color: $color-heading;
             position: absolute;
-            transition: all .75s ease-out;
+            transition: all .25s ease-out;
+        }
+    }
+
+    .circle-arrow {
+        height: 12rem;
+        width: 12rem;
+        border-radius: 50%;
+        border: .2rem solid $color-heading;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+
+        svg {
+            color: $color-heading;
+            width: 5.5rem;
+            position: relative;
+            left: -.1rem;
+            top: -.1rem;
+            z-index: 2;
+            transition: all .3s ease-in-out;
+            transition-delay: .1s;
+        }
+
+        &::after {
+            content: "";
+            height: 120%;
+            width: 120%;
+            background-color: $color-heading;
+            position: absolute;
+            left: -120%;
+            transition: all .3s ease-in-out;
+            transition-delay: .1s;
+        }
+
+        &:hover {
+            transition: all .3s ease-in-out;
+            transition-delay: .1s;
+
+            &::after {
+                left: calc(0% - 2%);
+            }
+
+            svg {
+                color: $color-white;
+            }
         }
     }
 }
