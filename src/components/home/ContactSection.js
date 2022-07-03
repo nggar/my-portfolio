@@ -1,6 +1,6 @@
 const ContactSection = () => {
     return (
-        <div className="container--black container--full-width">
+        <div className="main-container main-container--black">
             <div className="container">
                 <div className="contact-section section-padding section-margin">
                     <div>

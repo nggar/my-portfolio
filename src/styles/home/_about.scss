@@ -1,4 +1,6 @@
 .about-section {
+    overflow: hidden;
+
     .about-heading-wrapper {
         position: relative;
         z-index: 2;
@@ -24,10 +26,12 @@
         &__img {
             width: 100%;
             position: relative;
+            height: 84rem;
 
             .aboutme-img {
+                width: 100%;
                 max-width: 100%;
-                vertical-align: middle;
+                height: 100%;
                 display: inline-block;
                 object-fit: cover;
             }

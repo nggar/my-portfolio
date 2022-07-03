@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 html {
     font-size: 62.5%;
 }
@@ -28,5 +30,23 @@ li {
 
 .App {
     font-family: $ff-main;
-    min-width: 100%;
+}
+
+.main-container {
+    width: 100%;
+
+    &--black {
+        background-color: $color-heading;
+    }
+}
+
+.container {
+    max-width: 1216px;
+    margin: 0 auto;
+
+    &__project-section {
+        @include respond(1800) {
+            max-width: 100vw;
+        }
+    }
 }
