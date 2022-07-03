@@ -12,10 +12,10 @@ const SkillSection = () => {
                     </div>
                     <div className="box">
                         <h3 className='sub-heading'>React JS</h3>
-                        <h3 className='sub-heading'>Node JS</h3>
+                        <h3 className='sub-heading'>Next JS</h3>
                     </div>
                     <div className="box">
-                        <h3 className='sub-heading'>Figma</h3>
+                        <h3 className='sub-heading'>Node JS</h3>
                         <h3 className='sub-heading'>Framer motion</h3>
                     </div>
                 </div>

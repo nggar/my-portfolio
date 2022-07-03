@@ -1,6 +1,7 @@
 import HeaderSection from './HeaderSection';
 import SkillSection from './SkillSection';
 import Projects from './Projects';
+import AboutSection from './AboutSection';
 
 const HomePage = () => {
     return (
@@ -8,6 +9,7 @@ const HomePage = () => {
             <HeaderSection />
             <SkillSection />
             <Projects />
+            <AboutSection />
         </>
     )
 }
