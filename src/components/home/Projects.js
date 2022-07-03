@@ -1,6 +1,6 @@
 const Projects = () => {
     return (
-        <div className="container full-width">
+        <div className="container container-project-section">
             <div className="projects-section section-padding">
                 <h1 className="projects-heading heading-2">Browse my portfolio</h1>
                 <div className="projects-wrapper">

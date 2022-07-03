@@ -9,9 +9,16 @@
 }
 
 .container {
-    width: 100%;
     max-width: 1216px;
     margin: 0 auto;
+
+    &--black {
+        background-color: $color-heading;
+    }
+
+    &--full-width {
+        max-width: 100%;
+    }
 }
 
 .border-bottom {
@@ -111,6 +118,24 @@
 
         svg {
             color: $color-white;
+        }
+    }
+
+    &--white {
+        border: .2rem solid $color-white;
+
+        svg {
+            color: $color-white;
+        }
+
+        &::after {
+            background-color: $color-white;
+        }
+
+        &:hover {
+            svg {
+                color: $color-heading;
+            }
         }
     }
 }

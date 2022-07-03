@@ -1,0 +1,33 @@
+.contact-section {
+    p {
+        font-size: 2.2rem;
+        color: $color-white;
+        font-weight: 500;
+        line-height: 3.6rem;
+    }
+
+    display: flex;
+
+    div {
+        &:nth-child(1) {
+            width: 60%;
+
+            h2 {
+                margin-bottom: 2.4rem;
+
+                span {
+                    border-bottom: .5rem solid $color-white;
+                    padding-bottom: .4rem;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            width: 40%;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+    }
+}
