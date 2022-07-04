@@ -1,14 +1,18 @@
 .link-arrow {
-    display: flex;
     position: relative;
-    width: 21.4rem;
+    width: max-content;
     height: min-content;
+    display: flex;
     align-items: center;
+
+    .link-arrow__text {
+        margin-right: 3.5rem;
+    }
 
     svg {
         transform: rotate(-45deg) translateX(0px) translateY(0px);
         color: $color-heading;
-        height: 2.4rem;
+        height: 100%;
         position: absolute;
         transition: all .25s ease-out;
         bottom: 0;
