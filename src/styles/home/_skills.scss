@@ -4,12 +4,28 @@
     }
 
     .skills {
-        display: flex;
-        justify-content: space-evenly;
-        gap: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 4rem;
+
+        @include respond(992) {
+            grid-template-columns: 1fr 1fr;
+
+            .box {
+                &:nth-child(3) {
+                    grid-column: 1 / -1;
+                    display: flex;
+                    column-gap: 4rem;
+                    border-top: 0;
+
+                    h3 {
+                        flex: 1;
+                    }
+                }
+            }
+        }
 
         .box {
-            flex: 1;
             border-top: 1px solid $color-line;
 
             .sub-heading {

@@ -7,6 +7,10 @@
 
     .link-arrow__text {
         margin-right: 3.5rem;
+
+        @include respond(992) {
+            margin-right: 2.5rem;
+        }
     }
 
     svg {

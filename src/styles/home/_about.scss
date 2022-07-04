@@ -1,5 +1,4 @@
 .about-section {
-    overflow: hidden;
 
     .about-heading-wrapper {
         position: relative;
@@ -37,13 +36,19 @@
             }
 
             .aboutme-svg {
+                width: 22rem;
                 position: absolute;
                 left: auto;
                 top: auto;
-                right: -10rem;
-                bottom: -8rem;
-
+                right: -9rem;
+                bottom: -9rem;
                 animation: rotate 35s ease-in-out infinite;
+
+                @include respond(992) {
+                    width: 16rem;
+                    right: -4.2rem;
+                    bottom: -4.2rem;
+                }
             }
         }
 

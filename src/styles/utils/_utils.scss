@@ -6,6 +6,11 @@
 .section-padding {
     padding-top: 16rem;
     padding-bottom: 16rem;
+
+    @include respond(768) {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
 }
 
 .border-bottom {

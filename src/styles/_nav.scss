@@ -42,10 +42,10 @@
         }
 
         @include respond(992) {
-            position: absolute;
-            left: -75vw;
+            position: fixed;
+            left: -70vw;
             top: 0;
-            width: 75vw;
+            width: 70vw;
             height: 100vh;
             background-color: $color-heading;
             padding: 4rem 3rem;
@@ -110,11 +110,11 @@
     @include respond(992) {
         &--active {
             display: block;
-            width: 25vw;
+            width: 30vw;
             height: 100vh;
             top: 0;
             right: 0;
-            position: absolute;
+            position: fixed;
         }
     }
 }

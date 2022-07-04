@@ -9,16 +9,17 @@
     row-gap: 7.2rem;
     column-gap: 4rem;
 
+    @include respond(768) {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
     a {
 
         &:hover,
         &:focus {
 
             .project-title {
-                color: $color-regular;
-            }
-
-            .project-info {
                 color: $color-regular;
             }
 
@@ -32,8 +33,7 @@
 .project {
 
     &__img {
-        width: 100%;
-        height: 56.4rem;
+        width: 55.2rem;
         overflow: hidden;
 
         img {
@@ -42,6 +42,14 @@
             height: 100%;
             object-fit: cover;
             transition: all .25s ease-in-out;
+        }
+
+        @include respond(992) {
+            width: 40.6rem;
+        }
+
+        @include respond(768) {
+            width: 100%;
         }
     }
 
@@ -56,7 +64,7 @@
         }
 
         .project-info {
-            color: $color-heading;
+            color: $color-regular;
             display: flex;
             align-items: center;
             margin-bottom: 1rem;
