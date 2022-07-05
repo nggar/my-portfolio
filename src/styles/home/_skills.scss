@@ -25,12 +25,30 @@
             }
         }
 
+        @include respond(480) {
+            grid-template-columns: 1fr;
+
+            .box {
+                &:nth-child(3) {
+                    display: block;
+                }
+
+                &:nth-child(2) {
+                    border-top: 0;
+                }
+            }
+        }
+
         .box {
             border-top: 1px solid $color-line;
 
             .sub-heading {
                 padding: 4rem 0 4rem;
                 border-bottom: 1px solid $color-line;
+
+                @include respond(480) {
+                    padding: 3rem 0 3rem;
+                }
             }
         }
 

@@ -7,6 +7,10 @@
         margin: 0 auto;
         margin-bottom: -2.6rem;
 
+        @include respond(480) {
+            margin-bottom: -2rem;
+        }
+
         h1 {
             font-size: 6rem;
             font-weight: 500;
@@ -14,6 +18,15 @@
             color: $color-heading;
             text-align: center;
 
+            @include respond(768) {
+                font-size: 5rem;
+                line-height: 5.4rem;
+            }
+
+            @include respond(480) {
+                font-size: 3.8rem;
+                line-height: 4rem;
+            }
         }
     }
 
@@ -36,7 +49,6 @@
             }
 
             .aboutme-svg {
-                width: 22rem;
                 position: absolute;
                 left: auto;
                 top: auto;
@@ -49,6 +61,10 @@
                     right: -4.2rem;
                     bottom: -4.2rem;
                 }
+
+                @include respond(768) {
+                    display: none;
+                }
             }
         }
 
@@ -57,6 +73,10 @@
             justify-content: center;
             align-content: center;
             margin-top: 4.8rem;
+
+            @include respond(480) {
+                margin-top: 3.2rem;
+            }
         }
     }
 }

@@ -28,7 +28,7 @@
 
             @include respond(992) {
                 display: block;
-                margin-bottom: 3rem;
+                margin-bottom: 2.5rem;
 
                 &:nth-child(2) {
                     display: block;
@@ -49,7 +49,8 @@
             height: 100vh;
             background-color: $color-heading;
             padding: 4rem 3rem;
-            transition: all .5s ease-in;
+            transition: all .3s ease-in;
+            z-index: 2;
 
             &--mobile {
                 left: 0;
@@ -67,6 +68,10 @@
             width: 4.6rem;
             position: relative;
 
+            @include respond(480) {
+                width: 4rem;
+            }
+
             &__icon {
                 position: absolute;
                 width: 100%;
@@ -74,7 +79,7 @@
                 background-color: $color-heading;
                 display: inline-block;
                 left: 0;
-                transition: all .5s ease-in;
+                transition: all .3s ease-in;
 
                 &--1 {
                     top: 1.3rem;
@@ -87,6 +92,7 @@
 
             &--active {
                 .nav__btn__icon {
+                    background-color: $color-regular;
 
                     &--1 {
                         top: 1.9rem;
@@ -115,6 +121,7 @@
             top: 0;
             right: 0;
             position: fixed;
+            z-index: 2;
         }
     }
 }

@@ -1,6 +1,11 @@
 .section-margin {
     margin-left: 2.4rem;
     margin-right: 2.4rem;
+
+    @include respond(480) {
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+    }
 }
 
 .section-padding {
@@ -10,6 +15,11 @@
     @include respond(768) {
         padding-top: 12rem;
         padding-bottom: 12rem;
+    }
+
+    @include respond(480) {
+        padding-top: 8.6rem;
+        padding-bottom: 8.6rem;
     }
 }
 

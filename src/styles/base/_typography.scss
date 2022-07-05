@@ -12,6 +12,11 @@
     font-size: 6rem;
     line-height: 7rem;
     color: $color-heading;
+
+    @include respond(768) {
+        font-size: 4.2rem;
+        line-height: 5.2rem;
+    }
 }
 
 .heading-2 {
@@ -23,6 +28,16 @@
     &--white {
         color: $color-white;
     }
+
+    @include respond(768) {
+        font-size: 4.2rem;
+        line-height: 5.2rem;
+    }
+
+    @include respond(480) {
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+    }
 }
 
 .sub-heading {
@@ -30,6 +45,15 @@
     font-size: 2.6rem;
     line-height: 3.6rem;
     font-weight: 600;
+
+    @include respond(768) {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+
+    @include respond(480) {
+        font-size: 2.1rem;
+    }
 }
 
 .link-arrow {
@@ -39,7 +63,7 @@
     color: $color-heading;
 
     @include respond(992) {
-        font-size: 2.2rem;
+        font-size: 2rem;
         line-height: 2.2rem;
     }
 }
@@ -55,6 +79,13 @@
             font-size: 3.2rem;
             line-height: 3.4rem;
             color: $color-white;
+        }
+    }
+
+    @include respond(480) {
+        &--white {
+            font-size: 2.4rem;
+            line-height: 2.6rem;
         }
     }
 }

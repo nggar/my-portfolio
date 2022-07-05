@@ -21,5 +21,31 @@
         line-height: 3.6rem;
         padding-bottom: 5.6rem;
         width: 75%;
+
+        @include respond(768) {
+            font-size: 1.8rem;
+            line-height: 3rem;
+            width: 100%;
+
+            padding-bottom: 3.2rem;
+        }
+    }
+
+    @include respond(768) {
+        flex-direction: column;
+
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            width: 100%;
+            padding-top: 5.2rem;
+            justify-content: flex-start;
+
+            @include respond(480) {
+                padding-top: 4rem;
+            }
+        }
     }
 }
