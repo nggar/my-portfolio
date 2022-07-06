@@ -1,7 +1,7 @@
 const SkillSection = () => {
     return (
         <div className="main-container">
-            <div className="container">
+            <div className="container" id='skills'>
                 <div className="skills-section section-padding section-margin border-bottom">
                     <div>
                         <h2 className="heading-2">My work skills</h2>

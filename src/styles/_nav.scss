@@ -19,10 +19,6 @@
             }
 
             &:nth-child(2) {
-                display: none;
-            }
-
-            &:nth-child(3) {
                 margin-left: 3.2rem;
             }
 
@@ -31,10 +27,6 @@
                 margin-bottom: 2.5rem;
 
                 &:nth-child(2) {
-                    display: block;
-                }
-
-                &:nth-child(3) {
                     margin-left: 0;
                 }
             }
@@ -43,9 +35,9 @@
 
         @include respond(992) {
             position: fixed;
-            left: -70vw;
+            left: -75vw;
             top: 0;
-            width: 70vw;
+            width: 75vw;
             height: 100vh;
             background-color: $color-heading;
             padding: 4rem 3rem;
@@ -67,6 +59,7 @@
             height: 4rem;
             width: 4.6rem;
             position: relative;
+            margin-top: -.65rem;
 
             @include respond(480) {
                 width: 4rem;
@@ -116,7 +109,7 @@
     @include respond(992) {
         &--active {
             display: block;
-            width: 30vw;
+            width: 25vw;
             height: 100vh;
             top: 0;
             right: 0;

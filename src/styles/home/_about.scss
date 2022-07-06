@@ -40,6 +40,10 @@
             position: relative;
             height: 84rem;
 
+            @include respond(480) {
+                height: 56rem;
+            }
+
             .aboutme-img {
                 width: 100%;
                 max-width: 100%;

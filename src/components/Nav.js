@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     const [activeNav, setActiveNav] = useState( false );
@@ -11,17 +12,19 @@ const Nav = () => {
             <div className="container">
                 <div className="nav section-margin">
 
-                    <div className="nav__logo">
+                    <Link to='/' className="nav__logo">
                         <h1 className='logo-text'>Portfolio</h1>
-                    </div>
+                    </Link>
                     <div className={`nav__links ${activeNav ? 'nav__links--mobile' : ''}`}>
-                        <a className={`link-nav ${activeNav ? 'link-nav--white' : ''}`} href="#">About</a>
-                        <a className={`link-nav ${activeNav ? 'link-nav--white' : ''}`} href="#">Projects</a>
-                        <a className={`link-nav ${activeNav ? 'link-nav--white' : ''}`} href="#">Contact</a>
+                        <Link to='/about'
+                            className={`link-nav ${activeNav ? 'link-nav--white' : ''}`} >About</Link>
+                        <Link to='/contact'
+                            className={`link-nav ${activeNav ? 'link-nav--white' : ''}`} >Contact</Link>
                     </div>
                     <div onClick={navBtnHandler} className={`nav-outside ${activeNav ? 'nav-outside--active' : ''}`}></div>
 
-                    <div onClick={navBtnHandler} className={`nav__btn ${activeNav ? 'nav__btn--active' : ''}`}>
+                    <div onClick={navBtnHandler}
+                        className={`nav__btn ${activeNav ? 'nav__btn--active' : ''}`}>
                         <div className="nav__btn__icon nav__btn__icon--1"></div>
                         <div className="nav__btn__icon nav__btn__icon--2"></div>
                     </div>
