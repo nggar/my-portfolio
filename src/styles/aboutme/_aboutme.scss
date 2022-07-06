@@ -1,0 +1,38 @@
+.about-me {
+
+
+    h1 {
+        width: 90%;
+        margin-bottom: 4rem;
+    }
+
+    &__info {
+        display: flex;
+        column-gap: 4rem;
+    }
+
+
+    p {
+        flex: 1.5;
+        font-size: 2.2rem;
+        line-height: 3.6rem;
+        padding: 0 2rem;
+
+        @include respond(768) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__img {
+        flex: 1;
+        height: 500px;
+        width: 700px;
+
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

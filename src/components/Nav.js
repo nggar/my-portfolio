@@ -16,7 +16,7 @@ const Nav = () => {
                         <h1 className='logo-text'>Portfolio</h1>
                     </Link>
                     <div className={`nav__links ${activeNav ? 'nav__links--mobile' : ''}`}>
-                        <Link to='/about'
+                        <Link to='/aboutme'
                             className={`link-nav ${activeNav ? 'link-nav--white' : ''}`} >About</Link>
                         <Link to='/contact'
                             className={`link-nav ${activeNav ? 'link-nav--white' : ''}`} >Contact</Link>

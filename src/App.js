@@ -4,7 +4,10 @@ import './styles/app.scss';
 // import components
 import Nav from './components/Nav';
 import HomePage from './components/home/HomePage';
-
+import AboutMe from './components/about/AboutMe';
+import ProjectOne from './components/project-detail/ProjectOne';
+import ProjectTwo from './components/project-detail/ProjectTwo';
+import ProjectThree from './components/project-detail/ProjectThree';
 
 function App() {
     return (
@@ -17,6 +20,10 @@ function App() {
                 <Routes>
                     {/* Homepage */}
                     <Route path='/' element={<HomePage />} />
+                    <Route path='/aboutme' element={<AboutMe />} />
+                    <Route path='/project-1' element={<ProjectOne />} />
+                    <Route path='' element={<ProjectTwo />} />
+                    <Route path='' element={<ProjectThree />} />
                 </Routes>
             </BrowserRouter>
         </div>

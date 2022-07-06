@@ -7,7 +7,7 @@ const HeaderSection = () => {
             <div className="container">
                 <header className='section-margin header section-padding border-bottom'>
                     <div className="header__left">
-                        <h1 className='heading-1'>I'm Enggar, <br />  React js developer</h1>
+                        <h1 className='heading-1'>React JS developer</h1>
                         <p >Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam quis nostrud</p>
                         <HashLink className='link-arrow' to='#projects' smooth >
                             <div className="link-arrow__text">Browse portfolio</div>
