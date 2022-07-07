@@ -39,10 +39,6 @@
                 height: 550px;
                 object-fit: cover;
 
-                @include respond(992) {
-                    height: 450px;
-                }
-
                 @include respond(768) {
                     width: 70%;
                     margin-bottom: 3rem;
@@ -76,17 +72,11 @@
     // section 2
     .section-2 {
         h2 {
-            text-align: center;
-            max-width: 500px;
-            margin: 0 auto;
+            max-width: 80%;
             margin-bottom: 4rem;
 
             @include respond(768) {
-                text-align: left;
-            }
-
-            @include respond(480) {
-                margin-bottom: 2rem;
+                margin-bottom: 1rem;
             }
         }
 
