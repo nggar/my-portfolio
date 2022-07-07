@@ -5,7 +5,7 @@ const HeaderSection = () => {
     return (
         <div className="main-container">
             <div className="container">
-                <header className='section-margin header section-padding border-bottom'>
+                <header className='section-margin header section-padding'>
                     <div className="header__left">
                         <h1 className='heading-1'>React JS developer</h1>
                         <p >Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam quis nostrud</p>

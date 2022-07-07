@@ -13,12 +13,14 @@ const Nav = () => {
                 <div className="nav section-margin">
 
                     <Link to='/' className="nav__logo">
-                        <h1 className='logo-text'>Portfolio</h1>
+                        <h1 className='logo-text'>Enggar</h1>
                     </Link>
                     <div className={`nav__links ${activeNav ? 'nav__links--mobile' : ''}`}>
-                        <Link to='/aboutme'
+                        <Link onClick={navBtnHandler} to='/'
+                            className={`link-nav ${activeNav ? 'link-nav--white' : ''}`} >Home</Link>
+                        <Link onClick={navBtnHandler} to='/aboutme'
                             className={`link-nav ${activeNav ? 'link-nav--white' : ''}`} >About</Link>
-                        <Link to='/contact'
+                        <Link onClick={navBtnHandler} to='/contact'
                             className={`link-nav ${activeNav ? 'link-nav--white' : ''}`} >Contact</Link>
                     </div>
                     <div onClick={navBtnHandler} className={`nav-outside ${activeNav ? 'nav-outside--active' : ''}`}></div>

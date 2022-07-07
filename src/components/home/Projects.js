@@ -9,7 +9,7 @@ const Projects = () => {
         <div className="main-container">
             <div className="container" id='projects'>
                 <div className="projects-section section-padding section-margin border-bottom">
-                    <h1 className="projects-heading heading-2">Recent projects</h1>
+                    <h1 className="projects-heading heading-2">My projects</h1>
                     <div className="projects-wrapper">
 
                         {/* project 1 */}
