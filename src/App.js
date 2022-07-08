@@ -8,6 +8,7 @@ import AboutMe from './components/about/AboutMe';
 import ProjectOne from './components/project-detail/ProjectOne';
 import ProjectTwo from './components/project-detail/ProjectTwo';
 import ProjectThree from './components/project-detail/ProjectThree';
+import Contact from './components/contact/Contact';
 
 function App() {
     return (
@@ -22,8 +23,9 @@ function App() {
                     <Route path='/' element={<HomePage />} />
                     <Route path='/aboutme' element={<AboutMe />} />
                     <Route path='/project-1' element={<ProjectOne />} />
-                    <Route path='' element={<ProjectTwo />} />
-                    <Route path='' element={<ProjectThree />} />
+                    <Route path='/project-2' element={<ProjectTwo />} />
+                    <Route path='/project-3' element={<ProjectThree />} />
+                    <Route path='/contact' element={<Contact />} />
                 </Routes>
             </BrowserRouter>
         </div>

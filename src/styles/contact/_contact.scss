@@ -1,0 +1,111 @@
+.contact {
+    display: flex;
+    column-gap: 4rem;
+
+    @include respond(768) {
+        flex-direction: column;
+        row-gap: 5rem;
+    }
+
+    &__left {
+        flex: .9;
+
+        p {
+            font-size: 2.2rem;
+            line-height: 3.6rem;
+            margin-top: 2.4rem;
+            margin-bottom: 4rem;
+
+            @include respond(768) {
+                font-size: 1.8rem;
+                line-height: 3rem;
+                margin-bottom: 3rem;
+            }
+        }
+
+        .socials {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                margin-bottom: 4rem;
+
+                @include respond(768) {
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+
+    &__right {
+        flex: 1;
+
+        .input {
+            font-family: 'Thicccboi', sans-serif;
+            width: 100%;
+            outline: none;
+            color: $color-heading;
+            padding: 1.8rem 0 2.5rem;
+            border-radius: 0px;
+            border: 0px;
+            border-bottom: 1px solid #9F9F9F;
+            background-color: transparent;
+            transition: border-color 300ms ease, color 300ms ease;
+            font-size: 20px;
+            line-height: 22px;
+            margin-bottom: 4rem;
+
+            @include respond(992) {
+                font-size: 1.8rem;
+            }
+
+            &::placeholder {
+                color: #9F9F9F;
+            }
+
+            &:focus {
+                border-bottom: 1px solid $color-heading;
+            }
+
+            &__textarea {
+                padding-bottom: 10rem;
+
+                @include respond(768) {
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+
+        button {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.2rem;
+            cursor: pointer;
+
+            &:focus {
+                color: $color-regular;
+            }
+
+            @include respond(992) {
+                font-size: 2rem;
+            }
+
+            &::after {
+                bottom: -40%;
+            }
+        }
+    }
+}
+
+.success-message {
+    width: 100%;
+    padding: 3rem;
+    text-align: center;
+    background-color: $color-heading;
+
+    p {
+        color: $color-white;
+    }
+}

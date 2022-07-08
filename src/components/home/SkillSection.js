@@ -8,15 +8,15 @@ const SkillSection = () => {
                     </div>
                     <div className="skills">
                         <div className="box">
-                            <h3 className='sub-heading'>HTML/CSS</h3>
-                            <h3 className='sub-heading'>Javascript</h3>
-                        </div>
-                        <div className="box">
+                            <h3 className='sub-heading'>HTML/CSS/JS</h3>
                             <h3 className='sub-heading'>React JS</h3>
-                            <h3 className='sub-heading'>Next JS</h3>
                         </div>
                         <div className="box">
-                            <h3 className='sub-heading'>Node JS</h3>
+                            <h3 className='sub-heading'>Next JS</h3>
+                            <h3 className='sub-heading'>Node JS/Express</h3>
+                        </div>
+                        <div className="box">
+                            <h3 className='sub-heading'>Typescript</h3>
                             <h3 className='sub-heading'>Framer motion</h3>
                         </div>
                     </div>
