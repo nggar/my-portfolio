@@ -72,8 +72,12 @@
     // section 2
     .section-2 {
         h2 {
-            max-width: 80%;
+            max-width: 50%;
             margin-bottom: 4rem;
+
+            @include respond(992) {
+                max-width: 90%;
+            }
 
             @include respond(768) {
                 margin-bottom: 1rem;

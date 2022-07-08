@@ -13,7 +13,7 @@ const SkillSection = () => {
                         </div>
                         <div className="box">
                             <h3 className='sub-heading'>Next JS</h3>
-                            <h3 className='sub-heading'>Node JS/Express</h3>
+                            <h3 className='sub-heading'>Node/Express JS</h3>
                         </div>
                         <div className="box">
                             <h3 className='sub-heading'>Typescript</h3>
