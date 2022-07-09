@@ -37,10 +37,6 @@
 
         @include respond(480) {
             padding: 0 2.4rem;
-
-            p {
-                margin-bottom: 2.4rem;
-            }
         }
 
         .project-title {
@@ -91,6 +87,11 @@
 
             @include respond(992) {
                 margin-right: 2.8rem;
+            }
+
+            @include respond(480) {
+                font-size: 1.6rem;
+                line-height: 2rem;
             }
         }
 
@@ -161,6 +162,7 @@
 
             @include respond(480) {
                 padding-top: 3rem;
+                padding-bottom: 5rem;
             }
         }
     }
