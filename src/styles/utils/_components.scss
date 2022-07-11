@@ -138,3 +138,56 @@
         }
     }
 }
+
+.creator {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $color-white;
+
+
+    .name {
+        &--white {
+            color: $color-white;
+        }
+    }
+
+    a {
+        position: relative;
+
+        h5 {
+            color: white;
+            font-weight: 500;
+            line-height: 2.2rem;
+            font-size: 1.6rem;
+            width: max-content;
+            transition: color .25s ease-out;
+
+            &::after {
+                content: '';
+                height: .1rem;
+                width: 0%;
+                opacity: 0;
+                bottom: -10%;
+                left: 0;
+                background-color: $color-white;
+                position: absolute;
+                transition: all .25s ease-out;
+
+            }
+
+            &:hover {
+                color: darken($color-white, 30);
+
+                &::after {
+                    opacity: 1;
+                    width: 100%;
+                    transition: all .25s ease-out;
+                }
+            }
+
+
+        }
+    }
+}

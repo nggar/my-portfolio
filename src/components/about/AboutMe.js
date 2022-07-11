@@ -2,9 +2,12 @@ import { Link } from 'react-router-dom';
 
 import aboutmeImg from '../../assets/images/about-photo.jpg';
 
+import { motion } from 'framer-motion';
+import { pageTransition } from '../utils/animations';
+
 const AboutMe = () => {
     return (
-        <div className="about-me">
+        <motion.div variants={pageTransition} initial='hidden' animate='show' exit='exit' className="about-me">
             <div className="main-container">
                 <div className="container">
                     {/* section 1 */}
@@ -74,7 +77,7 @@ const AboutMe = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
 
     )
 }

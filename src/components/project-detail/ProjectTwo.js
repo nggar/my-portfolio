@@ -1,10 +1,11 @@
 import { HashLink } from 'react-router-hash-link';
-
+import { pageTransition } from '../utils/animations';
+import { motion } from 'framer-motion';
 import screenshot1 from '../../assets/images/frame-2.png';
 
 const ProjectTwo = () => {
     return (
-        <div className="project-detail">
+        <motion.div variants={pageTransition} initial='hidden' animate='show' exit='exit' className="project-detail">
 
             {/* Header */}
             <div className="project-detail__header">
@@ -99,7 +100,7 @@ const ProjectTwo = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

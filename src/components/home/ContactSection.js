@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const ContactSection = () => {
     return (
@@ -17,6 +18,10 @@ const ContactSection = () => {
                             </svg>
                         </Link>
                     </div>
+                </div>
+                <div className="creator section-margin">
+                    <p className='name name--white'>Created  by Enggar Jihandoko, © 2022</p>
+                    <HashLink smooth to='#nav'><h5>BACK TO TOP</h5></HashLink>
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@ const Nav = () => {
     return (
         <div className="main-container">
             <div className="container">
-                <div className="nav section-margin">
+                <div className="nav section-margin" id='nav'>
 
                     <Link to='/' className="nav__logo">
                         <h1 className='logo-text'>Enggar</h1>

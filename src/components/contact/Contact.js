@@ -1,4 +1,6 @@
 import React, { useRef, useState } from 'react';
+import { motion } from 'framer-motion';
+import { pageTransition } from '../utils/animations';
 import emailjs from '@emailjs/browser';
 
 const Result = () => {
@@ -35,7 +37,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="main-container">
+        <motion.div variants={pageTransition} initial='hidden' animate='show' exit='exit' className="main-container">
             <div className="container">
                 <div className="contact section-padding section-margin">
                     <div className="contact__left">
@@ -86,7 +88,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
