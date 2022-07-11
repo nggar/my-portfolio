@@ -7,7 +7,7 @@ const ContactSection = () => {
             <div className="container">
                 <div className="contact-section section-padding section-margin">
                     <div>
-                        <h2 className="heading-2 heading-2--white">Get in touch and <span>let's talk</span> about your project
+                        <h2 className="heading-2 heading-2--white">Get in touch and <div>let's talk</div> about your project
                         </h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nulla dolor illo veniam corporis. Exercitationem.</p>
                     </div>

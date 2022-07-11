@@ -14,15 +14,14 @@ import ScrollTop from './components/utils/ScrollTop';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
-
     const location = useLocation();
+
     return (
         <div className="App">
             {/* scroll to top when pathname change */}
             <ScrollTop />
             {/* Navigation */}
             <Nav />
-
             <AnimatePresence exitBeforeEnter>
                 {/* Pages */}
                 <Routes location={location} key={location.pathname} >

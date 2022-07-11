@@ -87,6 +87,9 @@ const Contact = () => {
                         </form>}</div>
                     </div>
                 </div>
+                <div className="copyright section-margin">
+                    <p>Created  by Enggar Jihandoko, © 2022</p>
+                </div>
             </div>
         </motion.div>
     )

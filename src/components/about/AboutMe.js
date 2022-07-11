@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import aboutmeImg from '../../assets/images/about-photo.jpg';
 
@@ -59,21 +60,27 @@ const AboutMe = () => {
             </div>
 
             {/* section 3 */}
-            <div className="main-container main-container--black">
+            <div className="main-container">
                 <div className="container">
                     <div className="contact-section section-padding section-margin">
                         <div>
-                            <h2 className="heading-2 heading-2--white">Interested in working together? <span >Get in touch </span>today.
+                            <h2 className="heading-2">Interested in working together? <div className='black-underline' >Get in touch</div> today.
                             </h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nulla dolor illo veniam corporis. Exercitationem.</p>
+                            <p className='black-paragraph'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nulla dolor illo veniam corporis. Exercitationem.</p>
                         </div>
                         <div>
-                            <Link to='/contact' className="circle-arrow circle-arrow--white">
+                            <Link to='/contact' className="circle-arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.2}>
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                                 </svg>
                             </Link>
                         </div>
+                    </div>
+                </div>
+                <div className="container">
+                    <div className="creator section-margin bordertop-black">
+                        <p className='name'>Created  by Enggar Jihandoko, © 2022</p>
+                        <HashLink smooth to='#nav'><h5 className='black border-black'>BACK TO TOP</h5></HashLink>
                     </div>
                 </div>
             </div>

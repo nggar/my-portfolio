@@ -4,7 +4,7 @@ export const pageTransition = {
     },
     show: {
         opacity: 1, y: 0,
-        transition: { duration: .4, delay: .3, ease: 'easeInOut' }
+        transition: { duration: .4, delay: .25, ease: 'easeInOut' }
     },
     exit: {
         opacity: 0, y: 300,

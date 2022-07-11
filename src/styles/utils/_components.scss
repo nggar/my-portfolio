@@ -146,8 +146,27 @@
     align-items: center;
     border-top: 1px solid $color-white;
 
+    &.bordertop-black {
+        border-top: 1px solid $color-line;
+    }
+
+    @include respond(480) {
+        padding: 2rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 
     .name {
+        @include respond(768) {
+            font-size: 1.4rem;
+        }
+
+        @include respond(480) {
+            order: 2;
+            margin-top: 4rem;
+        }
+
         &--white {
             color: $color-white;
         }
@@ -164,6 +183,20 @@
             width: max-content;
             transition: color .25s ease-out;
 
+            &.black {
+                color: $color-heading;
+            }
+
+            &.border-black {
+                &::after {
+                    background-color: $color-heading;
+                }
+
+                &:hover {
+                    color: $color-regular;
+                }
+            }
+
             &::after {
                 content: '';
                 height: .1rem;
@@ -174,6 +207,11 @@
                 background-color: $color-white;
                 position: absolute;
                 transition: all .25s ease-out;
+
+                @include respond(480) {
+                    width: 100%;
+                    opacity: 1;
+                }
 
             }
 
