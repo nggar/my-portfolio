@@ -34,25 +34,14 @@
         max-width: 65.6rem;
         margin-left: auto;
         margin-right: auto;
-        position: relative;
 
         &__img {
             width: 100%;
             position: relative;
             height: 84rem;
-            overflow: hidden;
 
             @include respond(480) {
                 height: 56rem;
-            }
-
-            .cover-transition {
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                top: 0;
-                left: 0;
-                background-color: black;
             }
 
             .aboutme-img {
@@ -63,6 +52,24 @@
                 object-fit: cover;
             }
 
+            .aboutme-svg {
+                position: absolute;
+                left: auto;
+                top: auto;
+                right: -9rem;
+                bottom: -9rem;
+                animation: rotate 35s ease-in-out infinite;
+
+                @include respond(992) {
+                    width: 16rem;
+                    right: -4.2rem;
+                    bottom: -4.2rem;
+                }
+
+                @include respond(768) {
+                    display: none;
+                }
+            }
         }
 
         &__link {
@@ -73,25 +80,6 @@
 
             @include respond(480) {
                 margin-top: 3.2rem;
-            }
-        }
-
-        .aboutme-svg {
-            position: absolute;
-            left: auto;
-            top: auto;
-            right: -10rem;
-            bottom: -3rem;
-            animation: rotate 35s ease-in-out infinite;
-
-            @include respond(992) {
-                width: 16rem;
-                right: -4.2rem;
-                bottom: -4.2rem;
-            }
-
-            @include respond(768) {
-                display: none;
             }
         }
     }
