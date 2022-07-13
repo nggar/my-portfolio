@@ -10,7 +10,8 @@ import { pageTransition } from '../utils/animations';
 
 const HomePage = () => {
     return (
-        <motion.div variants={pageTransition} animate='show' initial='hidden' exit='exit' >
+        <motion.div
+            variants={pageTransition} animate='show' initial='hidden' exit='exit' >
             <HeaderSection />
             <SkillSection />
             <Projects />
