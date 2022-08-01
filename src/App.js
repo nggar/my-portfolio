@@ -1,6 +1,7 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 // import styles
 import './styles/app.scss';
+import Layout from './components/utils/cursor/Layout';
 // import components
 import Nav from './components/Nav';
 import HomePage from './components/home/HomePage';
@@ -18,6 +19,7 @@ function App() {
 
     return (
         <div className="App">
+            <Layout />
             {/* scroll to top when pathname change */}
             <ScrollTop />
             {/* Navigation */}
